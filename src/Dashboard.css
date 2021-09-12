@@ -1,0 +1,36 @@
+body{
+    /* background-image: url("https://abrimpk.com/wp-content/uploads/2021/06/slider-1.png"); */
+    background-color:skyblue ;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+.dash-btn{
+    width: 80px;
+}
+.dashboard{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 125px;
+   
+
+}
+h1{
+    color: #5f5f05;
+}
+.header{
+    text-align: center;
+    font-size: 40px;
+    color: #000801;
+    font-family: math;
+
+}
+.label{
+    text-align: center;
+    font-weight: 100;
+    color: #002317;
+}
+.app-link{
+    margin-right: 10px;
+    
+
+}

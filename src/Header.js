@@ -16,7 +16,7 @@ function Header(props) {
 
            </div>
            <div>
-               <Link to="/cart"><i class="fas fa-shopping-cart"></i> 
+               <Link to="/"><i class="fas fa-shopping-cart"></i> 
                
                Cart {' '}
 

@@ -64,7 +64,7 @@ function Home() {
      
         <Main onAdd={onAdd}  cartItems={cartItems} filterData={filterData}/>
         <Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
-        <datePicker />
+        
       </div>
     </div>
   );

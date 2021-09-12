@@ -17,7 +17,7 @@ function Home() {
   let fetchProductList = async () => {
     try {
       let productsData = await axios.get(
-        "http://localhost:3000/all-products"
+        "https://equippment-hiring.herokuapp.com/all-products"
       );
       //console.log(productsData.data);
       setProducts([...productsData.data]);

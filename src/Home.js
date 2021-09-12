@@ -2,15 +2,13 @@ import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Main from "./Main";
 import Basket from "./Basket";
-// import data from "./data";
 import "./App.css";
-// import Cart from "./Cart";
- import axios from "axios";
+import axios from "axios";
+import datePicker from "./datePicker";
 
 function Home() {
   const [products,setProducts]=useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  // const[filterDatas,setFilterDatas] =useState([]);
   useEffect(() => {
     fetchProductList();
   }, []);
@@ -25,11 +23,7 @@ function Home() {
       console.log(error);
     }
   };
-
-  //  const { products } = data;
   const [cartItems, setCartItems] = useState([]);
-  
-  
   const onAdd = product => {
     const exist = cartItems.find(x => x.id === product.id);
     if (exist) {
@@ -43,8 +37,6 @@ function Home() {
     }
   };
   // console.log(cartItems);
- 
- 
   const onRemove = product => {
     const exist = cartItems.find(x => x.id === product.id);
     if (exist.qty === 1) {
@@ -65,16 +57,14 @@ function Home() {
     return searchData.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
 //console.log(filterData);
-
   return (
     <div className="App">
       <Header countCartItems={cartItems.length} getSearchTerm ={getSearchTerm } filterData={filterData}> </Header>
       <div className="grid">
+     
         <Main onAdd={onAdd}  cartItems={cartItems} filterData={filterData}/>
         <Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
-        {/* <Cart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} /> */}
-        
-        
+        <datePicker />
       </div>
     </div>
   );

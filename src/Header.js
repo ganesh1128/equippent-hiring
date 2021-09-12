@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import "./Dashboard.css"
 
 function Header(props) {
     const {getSearchTerm,filterData} = props;
@@ -16,7 +17,7 @@ function Header(props) {
 
            </div>
            <div>
-               <Link to="/"><i class="fas fa-shopping-cart"></i> 
+               <Link to="/" className="head"><i class="fas fa-shopping-cart"></i> 
                
                Cart {' '}
 
@@ -26,7 +27,8 @@ function Header(props) {
                ):
             (' ') }
                </Link>{' '}
-        <Link to="/About"><span>About</span></Link>
+        <Link to="/About" className="head"><span>About</span></Link>
+        <Link to="/" className="head"><span>Dashboard</span></Link>
            </div>
           
        </header>

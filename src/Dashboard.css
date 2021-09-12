@@ -11,8 +11,6 @@ body{
     text-align: center;
     font-family: "Times New Roman", Times, serif;
     margin-top: 125px;
-   
-
 }
 h1{
     color: #5f5f05;
@@ -31,6 +29,7 @@ h1{
 }
 .app-link{
     margin-right: 10px;
-    
-
+}
+.head{
+    margin-right: 4px;
 }

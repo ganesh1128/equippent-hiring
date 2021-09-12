@@ -1,4 +1,6 @@
 import React from 'react'
+import "./App.css"
+import { Link } from 'react-router-dom';
 
 
 function About() {
@@ -9,6 +11,7 @@ function About() {
 				   <li>Aliquam tincidunt mauris eu risus.</li>
 				   <li>Vestibulum auctor dapibus neque.</li>
 				</ul>
+                <Link  to="/home"><button className="dash-btn">Go Back</button></Link>
         </div>
     )
 }

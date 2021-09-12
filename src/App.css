@@ -90,6 +90,10 @@ button{
   width: 75%;
   cursor: pointer;
 }
+.dash-btn{
+  margin-left: 25px;
+
+}
 button.add{
   background-color: #40c0f0;
 width: 1.5rem;

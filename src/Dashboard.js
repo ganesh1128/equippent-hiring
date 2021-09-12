@@ -37,7 +37,7 @@ function Dashboard() {
           target="_blank"
           rel="noopener noreferrer"
         >
-         <i class="fas fa-envelope"></i>Mail us
+         <i class="fas fa-envelope"></i>Mail
         </a>
             <header className="header">Geek's Equippment Rentals</header>
             <h3 className="label">camera equippment | bikes | cars | cycles | shoes | laptops</h3>

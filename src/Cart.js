@@ -55,7 +55,7 @@ function Cart() {
 
     // const {onAdd,onRemove} = props;
     
-    const qty = cartItems.map((e) => e.qty )
+    // const qty = cartItems.map((e) => e.qty )
     const itemsPrice = cartItems.reduce((a,c) => a + c.price * c.qty , 0);
     const taxPrice = itemsPrice * 0.14;
     const shippingPrice = itemsPrice >= 2000 ? 0 : 50 ;

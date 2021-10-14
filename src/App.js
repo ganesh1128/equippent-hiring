@@ -8,7 +8,7 @@ import './App.css';
 import Dashboard from './Dashboard';
 import Home from './Home';
 import About from "./About";
-// import Cart from "./Cart";
+
 
 function App() {
   return (
@@ -22,8 +22,6 @@ function App() {
             </Route>
             <Route path="/home" component={Home} exact={true}>
             </Route>
-            {/* <Route path="/cart" component={Cart} exact={true}>
-            </Route> */}
           </Switch>
     </Router>
     </>
